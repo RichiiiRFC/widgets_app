@@ -31,7 +31,7 @@ class _HomeView extends StatelessWidget {
         itemCount: appMenuItems.length,
         itemBuilder: (context, index){
           final menuItem = appMenuItems[index];
-          
+
           return _CustomListTile(menuItem: menuItem);
 
     }
@@ -59,7 +59,9 @@ class _CustomListTile extends StatelessWidget {
       trailing: Icon( Icons.arrow_forward_ios_rounded, color: colors.primary),
       title: Text(menuItem.title),
       subtitle: Text(menuItem.subTitle),
+
       onTap:(){
+
         // Navigator.of(context).push(
         //   MaterialPageRoute(
         //       builder: (context) => const ButtonsScreen(),
@@ -68,7 +70,6 @@ class _CustomListTile extends StatelessWidget {
         // Navigator.pushNamed(context, menuItem.link);
 
         context.push( menuItem.link);
-        
         // context.pushNamed(CardsScreen.name);
 
       },
