@@ -18,6 +18,14 @@ class MenuItem{
 }
 
 const appMenuItems = <MenuItem>[
+
+  MenuItem(
+      title: 'Counter Screen',
+      subTitle: 'Pantalla de conteo',
+      link: '/counter',
+      icon: Icons.add
+  ),
+
   MenuItem(
       title: 'Botones',
       subTitle: 'Varios botones en Flutter',
@@ -47,6 +55,13 @@ const appMenuItems = <MenuItem>[
   ),
 
   MenuItem(
+      title: 'Animated Container',
+      subTitle: 'Animaciones de un contenedor',
+      link: '/animated',
+      icon: Icons.collections_outlined
+  ),
+
+  MenuItem(
       title: 'UI Controls + Tiles',
       subTitle: 'Una serie de controles de Flutter',
       link: '/ui-controls',
@@ -64,6 +79,13 @@ const appMenuItems = <MenuItem>[
       title: 'InfiniteScroll y Pull',
       subTitle: 'Listas infinitas y pull to refresh',
       link: '/infinite',
+      icon: Icons.list_alt_rounded
+  ),
+
+  MenuItem(
+      title: 'Cambiar tema',
+      subTitle: 'Cambiar tema de la aplicación',
+      link: '/theme-changer',
       icon: Icons.list_alt_rounded
   ),
 
