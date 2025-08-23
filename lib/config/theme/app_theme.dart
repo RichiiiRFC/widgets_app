@@ -32,4 +32,13 @@ class AppTheme {
       centerTitle: false
     )
   );
+
+  AppTheme copyWidth({
+    int? selectedColor,
+    bool? isDarkmode
+  }) => AppTheme(
+    selectedColor: selectedColor ?? this.selectedColor,
+    isDarkmode: isDarkmode ?? this.isDarkmode
+  );
+
 }
